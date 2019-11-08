@@ -1,6 +1,7 @@
 (function() {
 
     var elsH = document.querySelectorAll(".image-spliter .mover");
+    // elsH.style.left = width.
     var i = elsH.length;
     while (i--) {
         var moverWidth = elsH[i].getBoundingClientRect().width;
