@@ -8,6 +8,10 @@
         var imgLeft = elsH[i].nextElementSibling;
         var width = imgLeft.getBoundingClientRect().width;
         var height = imgLeft.getBoundingClientRect().height;
+        // add default width in case image isn't loaded
+        if (width == 0) {
+            width = 345;
+        }
         elsH[i].style.left = width / 2 - moverWidth / 2 + 'px';
         //imgLeft.style.clip = "rect(0px, " + width / 2 + "px, " + height + "px, 0px)";
         imgLeft.style.clip = "rect(0px, " + width / 2 + "px, 999px, 0px)";
