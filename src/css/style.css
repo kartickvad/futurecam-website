@@ -756,10 +756,8 @@
 .testimonial-section {
   padding-top: 46px;
   padding-bottom: 36px;
-  background-color: #f4f5f7;
   position: relative;
   z-index: 1;
-  background: #e7f4ed;
 }
 
 @media (min-width: 992px) {
