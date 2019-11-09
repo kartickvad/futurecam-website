@@ -38,9 +38,12 @@ img,
   position:absolute;
   left:50%;
   content: "";
-  background: #fff;
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+.mover:before {
+  background: #fff;
 }
 
 .mover:after {
