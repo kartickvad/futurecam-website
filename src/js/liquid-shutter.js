@@ -16,6 +16,15 @@
   var imgSeven = document.getElementById("img-7");
   var imgEight = document.getElementById("img-8");
 
+  imgOne.style.visibility = 'visible';
+  imgTwo.style.visibility = 'hidden';
+  imgThree.style.visibility = 'hidden';
+  imgFour.style.visibility = 'hidden';
+  imgFive.style.visibility = 'hidden';
+  imgSix.style.visibility = 'hidden';
+  imgSeven.style.visibility = 'hidden';
+  imgEight.style.visibility = 'hidden';
+
   // Update the current slider value (each time you drag the slider handle)
   slider.oninput = function() {
     var imgNumber = this.value/division;

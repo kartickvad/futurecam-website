@@ -542,6 +542,15 @@
   width: 100%;
 }
 
+.liquid-shutter .images {
+  display: grid;
+}
+
+.liquid-shutter .images img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
