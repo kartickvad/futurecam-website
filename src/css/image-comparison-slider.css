@@ -43,6 +43,10 @@ img,
   cursor: grab;
 }
 
+.mover:after {
+  background: #ad6ca5
+}
+
 .mover:before {
   top: 0;
   transform:translateX(-50%);
