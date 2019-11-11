@@ -4,7 +4,8 @@
 //////////////////////////// */
 
 .site-header {
-  background-color: #ad6ca5;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @media (min-width: 768px) {
@@ -490,7 +491,7 @@
 
 .hero-image {
   /* padding: 0 35px; */
-  background-image: url("../image/iphone-xs-mockup.png");
+  background-image: url("../image/iphone-xs-mockup-landscape.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -562,6 +563,7 @@
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
+  margin-top: 5px;
 }
 
 /* Mouse-over effects */
@@ -596,12 +598,12 @@
 .about-wrapper {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .about-wrapper .about-content {
   text-align: center;
   padding-bottom: 36px;
+  padding-top: 5px;
 }
 
 @media (min-width: 768px) {
@@ -624,7 +626,7 @@
   font-family: 'Karla', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   line-height: 50px;
 }
 
@@ -654,7 +656,7 @@
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.3px;
-  line-height: 36px;
+  line-height: 25px;
 }
 
 @media (min-width: 768px) {
