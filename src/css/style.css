@@ -848,8 +848,8 @@
   margin-bottom: 34px;
   -webkit-columns: 2 350px;
           columns: 2 350px;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
 }
 
 .testimonial-card .card-content p {
@@ -862,8 +862,9 @@
 }
 
 .testimonial-card .card-content ul li {
-  padding-top: 10px;
+  padding-top: 15px;
   list-style-type: disc;
+  line-height: 25px
 }
 
 .testimonial-card .card-id {
