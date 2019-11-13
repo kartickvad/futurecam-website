@@ -457,8 +457,8 @@
 
 .hero-left-content .hero-btns .apple-store {
   padding: 0 6px;
-  width: 50%;
-  max-width: 200px;
+  width: 48%;
+  max-width: 182px;
   white-space: nowrap;
   text-align: center;
 }
@@ -483,7 +483,7 @@
 
 .hero-left-content .hero-btns .google-play {
   padding: 0 6px;
-  width: 50%;
+  width: 52%;
   max-width: 200px;
 }
 
@@ -944,12 +944,14 @@
 
 .cta-content .cta-btns .apple-store {
   padding: 0 9px;
-  width: 50%;
+  width: 48%;
+  max-width: 182px;
 }
 
 .cta-content .cta-btns .google-play {
   padding: 0 9px;
-  width: 50%;
+  width: 52%;
+  max-width: 200px;
 }
 
 /* /////////////////////////// 
