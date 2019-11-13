@@ -632,10 +632,10 @@
 .about-wrapper .about-content h2 {
   color: #1f1f1f;
   font-family: 'Karla', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: -3px;
-  line-height: 50px;
+  line-height: 45px;
 }
 
 @media (min-width: 768px) {
