@@ -10,11 +10,11 @@
         var height = imgLeft.getBoundingClientRect().height;
         // add default width in case image isn't loaded
         if (width == 0) {
-            width = 172.5;
+            width = 345;
         }
-        elsH[i].style.left = width / 4 - moverWidth / 2 + 'px';
+        elsH[i].style.left = width / 2 - moverWidth / 2 + 'px';
         //imgLeft.style.clip = "rect(0px, " + width / 2 + "px, " + height + "px, 0px)";
-        imgLeft.style.clip = "rect(0px, " + width / 4 + "px, 999px, 0px)";
+        imgLeft.style.clip = "rect(0px, " + width / 2 + "px, 999px, 0px)";
         var mouseDownX = 0;
         var X;
         elsH[i].addEventListener("mousedown", function(e) {
@@ -38,6 +38,7 @@
 
         elsH[i].addEventListener("mousemove", function(e) {
             if (mouseDownX) {
+                event.preventDefault();
                 this.style.left = parseInt(this.style.left) + (event.clientX - X) + "px";
                 X = event.clientX;
                 this.nextElementSibling.style.clip = "rect(0px, " + (this.getBoundingClientRect().width / 2 + parseInt(this.style.left)) + "px, " + this.getBoundingClientRect().height + "px, 0px)";
@@ -46,6 +47,7 @@
 
         elsH[i].addEventListener("touchmove", function(e) {
             if (mouseDownX) {
+                event.preventDefault();
                 this.style.left = parseInt(this.style.left) + (e.touches[0].clientX - X) + "px";
                 X = e.touches[0].clientX;
                 this.nextElementSibling.style.clip = "rect(0px, " + (this.getBoundingClientRect().width / 2 + parseInt(this.style.left)) + "px, " + this.getBoundingClientRect().height + "px, 0px)";

@@ -453,6 +453,8 @@
 
 @media (min-width: 992px) {
   .hero-left-content .hero-btns {
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
 }
 
@@ -486,6 +488,15 @@
   padding: 0 6px;
   width: 52%;
   max-width: 200px;
+}
+
+@media (min-width: 992px) {
+  .hero-left-content .hero-btns .apple-store {
+    padding: 0px 15px;
+  }
+  .hero-left-content .hero-btns .google-play {
+    padding: 0px 15px;
+  }
 }
 
 .hero-image {
@@ -588,6 +599,7 @@
   height: 25px; /* Slider handle height */
   background: #ad6ca5; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  box-shadow: 2px 2px 1px black;
 }
 
 .slider::-moz-range-thumb {
@@ -619,7 +631,7 @@
     /* text-align: left;
     margin-top: 0;
     padding-bottom: 55px; */
-    padding-top: 0px;
+    padding-top: 15px;
   }
 }
 
@@ -837,10 +849,10 @@
 }
 
 .testimonial-card {
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  border-radius: 5px;
-  background-color: #ffffff;
+  /* -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); */
+          /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); */
+  /* border-radius: 5px; */
+  /* background-color: #ffffff; */
   padding: 30px 25px 35px 35px;
 }
 
@@ -926,14 +938,14 @@
   font-family: 'Karla', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: -5px;
+  letter-spacing: -4px;
   line-height: 55px;
 }
 
 @media (min-width: 992px) {
   .cta-content h2 {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 55px;
   }
 }
 
@@ -966,6 +978,16 @@
   padding: 0 9px;
   width: 52%;
   max-width: 200px;
+}
+
+@media (min-width: 992px) {
+  .cta-content .cta-btns .apple-store {
+    padding: 0px 15px
+  }
+
+  .cta-content .cta-btns .google-play {
+    padding: 0px 15px
+  }
 }
 
 /* /////////////////////////// 
