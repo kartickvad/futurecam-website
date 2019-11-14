@@ -17,11 +17,13 @@
 @media (min-width: 992px) {
   .site-header {
     padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
 .site-header .main-menu {
   margin: 0 -18px;
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -786,8 +788,8 @@
     Testimonial Section
 //////////////////////////// */
 .testimonial-section {
-  padding-top: 46px;
-  padding-bottom: 36px;
+  /* padding-top: 46px; */
+  /* padding-bottom: 36px; */
   position: relative;
   z-index: 1;
 }
