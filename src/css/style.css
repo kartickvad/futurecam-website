@@ -574,6 +574,10 @@
   grid-row: 1;
 }
 
+#liquid-shutter-header {
+  margin-top: -5px;
+}
+
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
