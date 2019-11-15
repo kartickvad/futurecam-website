@@ -998,7 +998,7 @@
 //////////////////////////// */
 .footer-bar-wrapper {
   border-top: 1px solid #e5e5e5;
-  padding: 0px 0 50px;
+  padding: 20px 50px 50px;
 }
 
 @media (min-width: 992px) {
