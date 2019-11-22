@@ -726,7 +726,11 @@
 }
 
 .about-wrapper .about-image img {
-  max-width: 100%;
+  width: 100%;
+}
+
+.twentytwenty-container .twentytwenty-before {
+  position: absolute;
 }
 
 .about-wrapper .about-image-02 {
