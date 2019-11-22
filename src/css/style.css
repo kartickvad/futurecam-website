@@ -484,6 +484,7 @@
 
 .apple-store img {
   /* padding-top: 12px; */
+  width: 100%;
 }
 
 .hero-left-content .hero-btns .google-play {
