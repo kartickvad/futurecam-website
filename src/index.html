@@ -70,8 +70,8 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-12 order-md-2 order-lg-1">
                             <div class="hero-image">
-                                <!-- <img src="image/iphone-xs-mockup.png" alt=""> -->
-                                <video autoplay loop playsinline muted preload>
+                                <div id="appPreviewSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                                <video autoplay loop playsinline muted preload onloadeddata="document.getElementById('appPreviewSpinner').style.display='none';">
                                     <source src="videos/appPreview.mp4"
                                             type="video/mp4">
                                 </video>
@@ -140,7 +140,8 @@
                     <div class="row">
                             <div class="order-lg-1 col-md-12">
                                     <div class="light-trail-media">
-                                        <video class="lazy" autoplay loop muted playsinline poster="image/lightTrailVideo.jpg">
+                                        <div id="lightTrailSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                                        <video class="lazy" autoplay loop muted playsinline poster="image/lightTrailVideo.jpg" onloadeddata="document.getElementById('lightTrailSpinner').style.display='none';">
                                             <source data-src="videos/lighttrail.mp4"
                                                     type="video/mp4">
                                         </video>
@@ -187,7 +188,8 @@
                 <div class="row">
                         <div class="col-md-12 order-1 order-md-1">
                                 <div class="timelapse-video text-center">
-                                    <video class="lazy" autoplay loop muted playsinline poster="image/timelapse.jpg">
+                                    <div id="timelapseSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                                    <video class="lazy" autoplay loop muted playsinline poster="image/timelapse.jpg" onloadeddata="document.getElementById('timelapseSpinner').style.display='none';">
                                         <source data-src="videos/timelapse.mp4"
                                                 type="video/mp4">
                                     </video>
@@ -212,7 +214,8 @@
                 <div class="row d-flex justify-content-center">
                         <div class="col-md-12 order-1 order-md-1">
                                 <div class="burst-video text-center">
-                                    <video class="lazy" autoplay loop muted playsinline poster="image/burst.jpg">
+                                    <div id="burstSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                                    <video class="lazy" autoplay loop muted playsinline poster="image/burst.jpg" onloadeddata="document.getElementById('burstSpinner').style.display='none';">
                                         <source data-src="videos/burst.mp4"
                                                 type="video/mp4">
                                     </video>
@@ -456,14 +459,15 @@
     <script src="js/liquid-shutter.js"></script>
     <script src="js/lazysizes.min.js"></script>
     <script>
-            $(window).on("load", function(){
-                $(".twentytwenty-container").twentytwenty();
-            });
+        
+        $(window).on("load", function(){
+            $(".twentytwenty-container").twentytwenty();
+        });
 
-            document.addEventListener('lazyloaded', function(e){
-                $(window).trigger("resize");
-            });
-        </script>  
+        document.addEventListener('lazyloaded', function(e){
+            $(window).trigger("resize");
+        });
+    </script>  
     
 </body>
 </html>
