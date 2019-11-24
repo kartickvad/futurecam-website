@@ -82,7 +82,7 @@
                     <div class="col-md-12 order-md-2 order-lg-1">
                             <div class="hero-image">
                                 <div id="appPreviewSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                                <video autoplay loop playsinline muted preload onloadeddata="document.getElementById('appPreviewSpinner').style.display='none';">
+                                <video autoplay loop playsinline muted preload oncanplaythrough="document.getElementById('appPreviewSpinner').style.display='none';">
                                     <source src="videos/appPreview.mp4"
                                             type="video/mp4">
                                 </video>
@@ -152,7 +152,7 @@
                             <div class="order-lg-1 col-md-12">
                                     <div class="light-trail-media">
                                         <div id="lightTrailSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                                        <video class="lazy" autoplay loop muted playsinline poster="image/lightTrailVideo.jpg" onloadeddata="document.getElementById('lightTrailSpinner').style.display='none';">
+                                        <video class="lazy" autoplay loop muted playsinline poster="image/lightTrailVideo.jpg" oncanplaythrough="document.getElementById('lightTrailSpinner').style.display='none';">
                                             <source data-src="videos/lighttrail.mp4"
                                                     type="video/mp4">
                                         </video>
@@ -200,7 +200,7 @@
                         <div class="col-md-12 order-1 order-md-1">
                                 <div class="timelapse-video text-center">
                                     <div id="timelapseSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                                    <video class="lazy" autoplay loop muted playsinline poster="image/timelapse.jpg" onloadeddata="document.getElementById('timelapseSpinner').style.display='none';">
+                                    <video class="lazy" autoplay loop muted playsinline poster="image/timelapse.jpg" oncanplaythrough="document.getElementById('timelapseSpinner').style.display='none';">
                                         <source data-src="videos/timelapse.mp4"
                                                 type="video/mp4">
                                     </video>
@@ -226,7 +226,7 @@
                         <div class="col-md-12 order-1 order-md-1">
                                 <div class="burst-video text-center">
                                     <div id="burstSpinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                                    <video class="lazy" autoplay loop muted playsinline poster="image/burst.jpg" onloadeddata="document.getElementById('burstSpinner').style.display='none';">
+                                    <video class="lazy" autoplay loop muted playsinline poster="image/burst.jpg" oncanplaythrough="document.getElementById('burstSpinner').style.display='none';">
                                         <source data-src="videos/burst.mp4"
                                                 type="video/mp4">
                                     </video>
